@@ -24,6 +24,7 @@ The overall workflow is in 5 stages, namely "Initiate Game", "Give Me A Word", "
 
 1. **Initiate Game**
   - You send a request to the system to initiate a game
+  - Provide a way for the user to start a game in your app
   - The URL of the system could be found in your invitation email
   - Get a secret key from the system and include this key in the following communications. This key identifies the game session!
   - Request & Response
@@ -65,6 +66,7 @@ The overall workflow is in 5 stages, namely "Initiate Game", "Give Me A Word", "
 
 2. **Give Me A Word**
   - After getting the secret key, you can ask the system to give you a word
+  - Provide a way for the user to request a new word
   - Remember to include BOTH your "userId" and "secret", and put the correct "action" as "nextWord"
   - In the response you will have "word" in the JSON. The "*" indicates the characters that you have to guess in a word. The number "*" in the word key tells you the number of charaters in a word.
   - What kinds of Words will appear in the game? please read [Words](https://github.com/kangbiu/strikingly-interview-test-instructions/edit/master/README.md#words) section 
@@ -107,6 +109,7 @@ The overall workflow is in 5 stages, namely "Initiate Game", "Give Me A Word", "
 
 3. **Make A Guess**
   - You can make a guess on those characters shown as "*" in a word
+  - Your app should have an UI to allow the user to choose the next letter to guess
   - You can only guess ONE character per request, i.e. "guess":"P". **NOTE**: The system will treat two characters or more as WRONG guess.
   - Let's say the word - "*****" is indeed "HAPPY". If the your character does exist in the word, then the response will return you the character in the corresponding positions of the word, i.e. "word": "**PP*"
   - But if your guess is incorrect, then it will return you the same word. Say you make your next guess as "guess":"K" and "K" does NOT exist in "HAPPY", you will get the response as "**PP*"
@@ -152,6 +155,7 @@ The overall workflow is in 5 stages, namely "Initiate Game", "Give Me A Word", "
 
 4. **Get Test Results**
   - You can get your results only when you have finished guess all the 80 words
+  - Show user's test results in your app
   - You get your results by sending a request with "action":"getTestResults"
   - Request & Response:
     * Request:
