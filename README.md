@@ -16,7 +16,6 @@ Through this programming test, you should be able to demostrate:
 * Good understanding of core iOS concepts and technologies, the Objective-C programming languange, how to construct a UI and how to organize code with MVC pattern
 * Code quality and maintainability
 * Good programming practices
-* Apply suitable algorithms to solve problems
 * Creativity!
 
 ## Program Flow and Sepecification
@@ -58,7 +57,7 @@ The overall workflow is in 5 stages, namely "Initiate Game", "Give Me A Word", "
       Explanation: 
       1. "message" always tells you a human readable message. The message in this response is a welcome message.
       2. "userId" shows your email address
-      3. "secret" gives you a secret for the follwing communication. This secret key identifies each game you play.
+      3. "secret" gives you a secret for the following communication. This secret key identifies each game you play.
       4. "status" tells you the status of your request. It follows the standard HTTP Status Code. 200 - OK, 400 - Bad Request, 401 - Unauthenticated
       5. "data" contains some useful data for your reference. In the "initiateGame" response, 
         "numberOfWordsToGuess" - tells you how many words you will have to guess to finish the game.
@@ -69,7 +68,7 @@ The overall workflow is in 5 stages, namely "Initiate Game", "Give Me A Word", "
   - Provide a way for the user to request a new word
   - Remember to include BOTH your "userId" and "secret", and put the correct "action" as "nextWord"
   - In the response you will have "word" in the JSON. The "*" indicates the characters that you have to guess in a word. The number "*" in the word key tells you the number of charaters in a word.
-  - What kinds of Words will appear in the game? please read [Words](https://github.com/kangbiu/strikingly-interview-test-instructions/edit/master/README.md#words) section 
+  - What kinds of Words will appear in the game? please read [Words](https://github.com/joycehan/strikingly-interview-test-instructions-iOS#words) section 
   - Request & Response
     * Request:
       <pre><code>
