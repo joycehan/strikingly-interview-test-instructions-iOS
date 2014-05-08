@@ -1,19 +1,19 @@
-## Welcome to Strikingly Interview Test - iOS engineer
+## Welcome to Strikingly Interview Test - iOS/Android engineer
 
 # INTRODUCTION
 
-This test is based on the famous Hangman Game. Your task is to write an iOS app to let users play Hangman, guessing words from our server through a REST API.
+This test is based on the famous Hangman Game. Your task is to write an iOS/Android app to let users play Hangman, guessing words from our server through a REST API.
 
 ## Requirements
-* Write an iOS app according to the following specifications. Users of your app should be able to play the hangman game, and they should be able to view and submit their scores.
+* Write an iOS/Android app according to the following specifications. Users of your app should be able to play the hangman game, and they should be able to view and submit their scores.
 * Email us your finished project! Be sure to include a Readme.txt explaining the cool things you did.
-* For this test, please write an iOS app using Objective-C
+* For this test, please write an iOS/Android app using Objective-C/Java
 * You can use ANY libraries relevant for this task.
 
 ## Our Expectations
 Through this programming test, you should be able to demostrate:
 
-* Good understanding of core iOS concepts and technologies, the Objective-C programming languange, how to construct a UI and how to organize code with MVC pattern
+* Good understanding of core iOS/Android concepts and technologies, the Objective-C/Java programming languange, how to construct a UI and how to organize code with MVC pattern
 * Code quality and maintainability
 * Good programming practices
 * Creativity!
