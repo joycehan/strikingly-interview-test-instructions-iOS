@@ -67,7 +67,7 @@ The overall workflow is in 5 stages, namely "Initiate Game", "Give Me A Word", "
   - After getting the secret key, you can ask the system to give you a word
   - Provide a way for the user to request a new word
   - Remember to include BOTH your "userId" and "secret", and put the correct "action" as "nextWord"
-  - In the response you will have "word" in the JSON. The "*" indicates the characters that you have to guess in a word. The number "*" in the word key tells you the number of charaters in a word.
+  - In the response you will have "word" in the JSON. The "\*" indicates the characters that you have to guess in a word. The number "\*" in the word key tells you the number of charaters in a word.
   - What kinds of Words will appear in the game? please read [Words](https://github.com/joycehan/strikingly-interview-test-instructions-iOS#words) section 
   - Request & Response
     * Request:
@@ -100,7 +100,7 @@ The overall workflow is in 5 stages, namely "Initiate Game", "Give Me A Word", "
       </code></pre>
 
       Explanation:
-      1. "word" contains the "*". A "*" sign indicate a missing character in a word
+      1. "word" contains the "\*". A "\*" sign indicate a missing character in a word
       2. "data" 
         * "numberOfWordsTried" - tells you the number of words that you have tried.
         * "numberOfGuessAllowedForThisWord" - tells you the number of guess you can have on this word. When the number is 0 and you still can't get the correct word, then this word will be counted as incorrect and you have to get a new word.
